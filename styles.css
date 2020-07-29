@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+:root{
+    --background-gradient: linear-gradient(#56CCF2, #2F80ED, rgb(61, 0, 160));
+    --sky-blue: #D0F4FC;
+    --yellow: #FCE765;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;  
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:honeydew;
+}
+
+main{
+    height: 430px;
+    width: 320px;
+    background: var(--background-gradient);
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sky{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.sky > div{
+    margin: 0 auto;
+    border-radius: 24px;
+}
+
+.cloud-1{
+    width: 100%;
+    height: 60px;
+    background: var(--sky-blue);
+}
+
+.cloud-2{
+    width: 75%;
+    height: 55px;
+    background: white;
+    margin-top: -30px !important;
+}
+
+.cloud-3{
+    width: 60%;
+    height: 40px;
+    background: var(--sky-blue);
+    margin-top: -15px !important;
+}
+
+.sun{
+    width: 90px;
+    height: 90px;
+    background: var(--yellow);
+    border-radius: 50% !important;
+    margin-top: -70px !important;
+}
+
+.content{
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+}
+
+.content > h1{
+    font-size: 80px;
+    margin-left: 20px;
+}
+
+.content > h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    margin-top: 16px;
+    font-weight: 300;
+    row-gap: 8px;
+}
+
+.value{
+    font-size: 36px;
+}
+
+.label{
+    font-size: 14px;
+}
